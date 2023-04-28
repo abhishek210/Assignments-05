@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+    <script defer type="text/babel" src="./index.js"></script>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    #root {
+        width: 100%;
+        height: 100%;
+        /* padding: 2rem; */
+
+
+    }
+
+    .bootstrap {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBar {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        /* margin: 2rem 0; */
+        background-color: black;
+        color: white;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .navBarLeft {
+        height: 100%;
+        width: 60%;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding-left: .5rem;
+    }
+
+    .navBarLeft h2 {
+        font-size: 2rem;
+    }
+
+    .navBarRight {
+        height: 100%;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .navBarRight button {
+        font-size: 1rem;
+        color: black;
+        background-color: white;
+        border: none;
+        outline: none;
+        padding: .8rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .navBarRight p {
+        font-size: 1.1rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .mainContainer {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0;
+        flex-direction: column;
+        /* padding-left: 8rem; */
+        /* background-color: rgba(127, 255, 234, 0.676); */
+        background-image: url("https://media.istockphoto.com/id/492496382/photo/starry-night-in-norther-part-of-india.jpg?s=612x612&w=0&k=20&c=3BA-kyV9m3G_bZ0Ta5UPpCzlHIPyAAChixiIlacvXUc=");
+        background-size: 100% 100%;
+    }
+
+    .mainContainer h1 {
+        font-size: 3rem;
+        /* font-weight: 500; */
+    }
+
+    .mainContainer p {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        color: white;
+    }
+
+    .mainContainer span {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        color: red;
+    }
+</style>
+
+<body>
+    <div id="root"></div>
+
+</body>
+
+</html>
